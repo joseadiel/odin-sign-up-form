@@ -1,0 +1,173 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: Norse;
+    src: url(fonts/Norse.otf);
+}
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-green: #596D48;
+    --color-light-gray: #acacac;
+    --color-white: white;
+}
+
+/* left side */
+
+.container {
+    display: flex;
+    justify-content: start;
+    justify-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bb {
+    width: 486px;
+}
+
+.banner {
+    background-color: black;
+    height: 120px;
+    width: 486px;
+    position: absolute;
+    top: 120px;
+    opacity: 50%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 3px;
+    position: absolute;
+    bottom: 500px;
+}
+
+.odin-head {
+    width: 70px;
+}
+
+.letter {
+    font-family: Norse;
+    font-weight: bold;
+    font-size: 5rem;
+    color: var(--color-white);
+}
+
+/* right side */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.4rem;
+    font-weight: bold;
+    gap: 20px;
+    padding: 50px;
+    max-width: 640px;
+}
+
+form {
+    width: 998px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 1px 1px 15px #c3c2c2;
+}
+
+fieldset {
+    display: flex;
+    align-items: start;
+    gap: 80px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+input {
+    border: 2px solid var(--color-light-gray);
+    border-radius: 5px;
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #05399a;
+    outline: none;
+}
+
+#password:invalid,
+#confirm_password:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.2rem;
+    font-weight: 500;
+    gap: 20px;
+    padding: 50px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 38px 10px 38px;
+}
+
+button {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+}
+
+a {
+    color: var(--color-green);
+    text-decoration: none;
+    font-weight: bold;
+}
